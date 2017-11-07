@@ -6,15 +6,13 @@
 /*   By: DERYCKE <DERYCKE@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 00:39:35 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/09/25 05:30:11 by DERYCKE          ###   ########.fr       */
+/*   Updated: 2017/10/23 00:10:03 by DERYCKE          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, unsigned int n)
 {
-	size_t		i;
+	unsigned int		i;
 	int			*tmp;
 
 	tmp = s;

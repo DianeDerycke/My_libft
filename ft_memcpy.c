@@ -6,15 +6,13 @@
 /*   By: DERYCKE <DERYCKE@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 03:28:36 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/09/25 05:30:12 by DERYCKE          ###   ########.fr       */
+/*   Updated: 2017/10/23 00:10:02 by DERYCKE          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t		lenn(const unsigned char *str)
+unsigned int		lenn(const unsigned char *str)
 {
-	size_t		i;
+	unsigned int		i;
 
 	i = 0;
 	while(str[i])
@@ -22,12 +20,12 @@ size_t		lenn(const unsigned char *str)
 	return (i);
 }
 
-void	*ft_memcpy(void *dest, void *src, size_t n)
+void	*ft_memcpy(void *dest, void *src, unsigned int n)
 {
 	unsigned char	*tmp;
 	unsigned char	*src1;
 	unsigned int	i;
-	size_t			len;
+	unsigned int			len;
 
 	src1 = src;
 	tmp = dest;

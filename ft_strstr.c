@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: DERYCKE <DERYCKE@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/25 01:30:03 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/10/23 00:09:59 by DERYCKE          ###   ########.fr       */
+/*   Created: 2017/03/18 18:08:35 by dderycke          #+#    #+#             */
+/*   Updated: 2017/10/23 00:10:15 by DERYCKE          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, unsigned int n)
-{
-	unsigned int		i;
-	unsigned char	*tmp;
+#include "libft.h"
 
-	tmp = s;
+char	*ft_strstr(const char *big, const char *little)
+{
+	int		i;
+	int		n;
+
 	i = 0;
-	if(!n)
-		return;
-	while(i < n)
+	if (!little || !big)
+		return (NULL);
+	if (little[0] == '\0')
+		return ((char*)big);
+	n = ft_strlen(little);
+	while (big[i] != '\0')
 	{
-		tmp[i] = '\0';
+		if (ft_strncmp(big + i, little, n) == 0)
+			return (((char *)big) + i);
 		i++;
 	}
+	return (NULL);
 }

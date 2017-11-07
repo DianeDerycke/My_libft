@@ -6,7 +6,7 @@
 /*   By: DERYCKE <DERYCKE@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 03:09:46 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/09/25 04:00:15 by DERYCKE          ###   ########.fr       */
+/*   Updated: 2017/10/23 00:10:16 by DERYCKE          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,15 @@
 
 #include <string.h>
 #include <unistd.h>
-void	ft_bzero(void *s, size_t n);
-void	*ft_memset(void *s, int c, size_t n);
-void	*ft_memcpy(void *dest, void *src, size_t n);
-size_t	ft_strlen(const char *str);
-
+#include <stdio.h>
+#include <stdlib.h>
+void	ft_putchar(char c);
+void	ft_putnbr(int n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+size_t	ft_strlen(const char *s);
+char	*ft_strstr(const char *big, const char *little);
+int		ft_atoi(const char *str);
+char	*ft_strdup(const char *s1);
+char	*ft_strcpy(char *dst, const char *src);
+char	*ft_strncpy(char *dst, const char *src, size_t len);
 #endif

@@ -1,0 +1,70 @@
+						TEST SUR HEADER ET MAKEFILE :
+
+Makefile : Not yet
+Header : Not yet
+
+---- = À faire
+
+
+A FAIRE 
+Refont du main.c/// en cours///
+Prob test strdup with the real one, prob venant du test ou de mon strdup ? a verifier.
+Retest strncmp (voir note dans function list de strncmp)
+
+						FUNCTION LIST:
+
+• memset
+• bzero
+• memcpy
+• memccpy
+• memmove
+• memchr
+• memcmp
+• strlen OK/TESTED
+• strdup OK / TESTED
+• strcpy OK / TESTED
+• strncpy EN COURS
+• strcat
+• strncat
+• strlcat
+• strchr
+• strrchr
+• strstr OK /TESTED
+• strnstr
+• strcmp -----------------
+• strncmp OK / TESTED < RETEST POUR N = 0 , ou N > LEN DE LA STRING
+• atoi OK / TESTED
+• isalpha
+• isdigit
+• isalnum
+• isascii
+• isprint
+• toupper
+• tolower
+
+						ADDTIONNALS FUNCTIONS : 
+
+• ft_memalloc
+• ft_memdel
+• ft_strnew
+• ft_strdel
+• ft_strclr
+• ft_striter
+• ft_striteri
+• ft_strmap
+• ft_strmapi
+• ft_strequ
+• ft_strnequ
+• ft_strsub
+• ft_strjoin
+• ft_strtrim
+• ft_strsplit
+• ft_itoa
+• ft_putchar OK / TESTED
+• ft_putstr
+• ft_putendl
+• ft_putnbr OK / TESTED
+• ft_putchar_fd
+• ft_putstr_fd
+• ft_putendl_fd
+• ft_putnbr_fd
