@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: DERYCKE <DERYCKE@student.42.fr>            +#+  +:+       +#+        */
+/*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 08:35:48 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/10/23 01:44:07 by DERYCKE          ###   ########.fr       */
+/*   Updated: 2017/11/12 16:57:52 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int		main(void)
 {
+	// STRSTR, PUTNBR, STRCPY, STRNCPY, STRDUP
 	//char *res1;
 	//char *res2;
 	int		i;
@@ -164,47 +165,9 @@ int		main(void)
 		printf("%s\n","STRNCPY FAIL :( :( :(" );
 	printf("%s\n","-------------------------------------" );
 	printf("%s\n","*************************************" );
-	printf("%s\n","----------------STRDUP---------------" );
 
-	char	*test;
-	char	*test1;
+	printf("%s\n","----------------BZERO--------------" );
+	
 
-	test = ft_strdup("HELLO WORLD");
-	test1 = strdup("HELLO WORLD");
-	//if (ft_strdup("HELLO WORLD") == strdup("HELLO WORLD"))
-	null_string = NULL;
-	i = 0;
-	printf("%s\n","----------------STRDUP---------------" );
-	if (test == test1)
-		printf("%s\n", "TEST 1 GOOD :D")&& i++;
-	else
-	{
-		printf("%s\n","TEST 1 FAIL :(");
-		printf("%s%lu\n","LEN TEST =", strlen(strdup("HELLO WORLD")));
-		printf("%s%lu\n","LEN TEST =", strlen(ft_strdup("HELLO WORLD")));
-		printf("%s%s","REAL STRDUP = ",strdup("HELLO WORLD"));
-		//printf("%s%s","MY STRDUP = ",ft_strdup("HELLO WORLD"));
-	}
-	/*if (ft_strdup("") == strdup(""))
-		printf("%s\n", "TEST 2 GOOD :D")&& i++;
-	else
-		printf("\n%s\n","TEST 2 FAIL :(");
-	if (ft_strdup("skjg kadfvk jdnkvj dnkfv") == strdup("skjg kadfvk jdnkvj dnkfv"))
-		printf("%s\n", "TEST 3 GOOD :D")&& i++;
-	else
-		printf("%s\n","TEST 3 FAIL :(");
-	if (i == 3)
-		printf("%s\n","****** STRDUP GOOD :D !!!!! ******" );
-	else
-		printf("%s\n","****** STRDUP FAIL :( :( :( ******" );
-
-	printf("%s\n","NULL STRING TEST");
-	printf("%s\n",ft_strdup(null_string));
-	printf("%s\n",ft_strdup("a"));
-	printf("%s\n","-------------------------------------" );
-	printf("%s\n","*************************************" );
-
-
-*/
 	return(0);
 }

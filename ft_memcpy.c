@@ -3,42 +3,44 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: DERYCKE <DERYCKE@student.42.fr>            +#+  +:+       +#+        */
+/*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 03:28:36 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/10/23 00:10:02 by DERYCKE          ###   ########.fr       */
+/*   Updated: 2017/11/12 20:23:49 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int		lenn(const unsigned char *str)
+#include "libft.h"
+
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	unsigned int		i;
+	size_t		i;
 
 	i = 0;
-	while(str[i])
-		i++;
-	return (i);
-}
-
-void	*ft_memcpy(void *dest, void *src, unsigned int n)
-{
-	unsigned char	*tmp;
-	unsigned char	*src1;
-	unsigned int	i;
-	unsigned int			len;
-
-	src1 = src;
-	tmp = dest;
-	len = lenn(tmp);
-	i = 0;
-	if(!src || !dest)
-		return(dest);
 	while (i < n)
-	{
-		tmp[len] = src1[i];
-		len++;
+	{	
+		(*(char*)dst) = (*(char*)src);
+		dst++;
+		src++;
 		i++;
 	}
-	dest = tmp; 
-	return(dest);
+	(*(char*)dst) = '\0';
+	return ((void*)(dst - i));
+}
+
+int		main(int argc, char **argv)
+{
+	(void)argc;
+	char	dst[20];
+	char	p[20];
+
+	printf("%s\n", (char*)ft_memcpy(dst, argv[1], 1));
+	printf("%s\n", (char*)memcpy(p, argv[2], 1));
+	printf("dst len = ");
+	printf("%lu\n", strlen(dst));
+	printf("p len = ");
+	printf("%lu\n", strlen(p));
+	bzero(dst, strlen(dst));
+	bzero(p,strlen(p));
+	return (0);
 }

@@ -8,7 +8,6 @@ Header : Not yet
 
 A FAIRE 
 Refont du main.c/// en cours///
-Prob test strdup with the real one, prob venant du test ou de mon strdup ? a verifier.
 Retest strncmp (voir note dans function list de strncmp)
 
 						FUNCTION LIST:
@@ -29,10 +28,10 @@ Retest strncmp (voir note dans function list de strncmp)
 • strlcat
 • strchr
 • strrchr
-• strstr OK /TESTED
+• strstr OK / TESTED
 • strnstr
-• strcmp -----------------
-• strncmp OK / TESTED < RETEST POUR N = 0 , ou N > LEN DE LA STRING
+• strcmp OK / TESTED
+• strncmp OK / TESTED
 • atoi OK / TESTED
 • isalpha
 • isdigit
