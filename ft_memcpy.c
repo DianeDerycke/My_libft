@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 03:28:36 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/12 20:23:49 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/12 20:40:24 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 	(*(char*)dst) = '\0';
 	return ((void*)(dst - i));
 }
-
+/*
 int		main(int argc, char **argv)
 {
 	(void)argc;
@@ -43,4 +43,4 @@ int		main(int argc, char **argv)
 	bzero(dst, strlen(dst));
 	bzero(p,strlen(p));
 	return (0);
-}
+}*/

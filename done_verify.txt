@@ -13,9 +13,9 @@ Retest strncmp (voir note dans function list de strncmp)
 						FUNCTION LIST:
 
 • memset
-• bzero
+• bzero < a tester encore sinon OK, a mettre dans le makefile et .h
 • memcpy
-• memccpy
+• memccpy OK / TEST < faire quelques test encore au cas ou , enlever le main, le rajouter dans le makefile et .h
 • memmove
 • memchr
 • memcmp
