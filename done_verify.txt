@@ -22,7 +22,7 @@ Retest strncmp (voir note dans function list de strncmp)
 • strnstr
 • isascii
 • toupper OK / TESTED
-• tolower 
+• tolower OK / TESTED
 • isprint OK / TESTED
 • isalpha OK / TESTED
 • isdigit OK / TESTED
