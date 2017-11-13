@@ -20,13 +20,13 @@ Retest strncmp (voir note dans function list de strncmp)
 • strchr
 • strrchr
 • strnstr
-• isalpha OK
-• isdigit OK
-• isalnum OK
 • isascii
-• isprint
-• toupper
-• tolower
+• toupper OK / TESTED
+• tolower 
+• isprint OK / TESTED
+• isalpha OK / TESTED
+• isdigit OK / TESTED
+• isalnum OK / TESTED
 • strcat OK / TESTED
 • memset OK / TESTED
 • bzero OK / TESTED
