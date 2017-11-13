@@ -15,19 +15,19 @@ Retest strncmp (voir note dans function list de strncmp)
 • memmove
 • memchr
 • memcmp
-• strcat
 • strncat
 • strlcat
 • strchr
 • strrchr
 • strnstr
-• isalpha
-• isdigit
-• isalnum
+• isalpha OK
+• isdigit OK
+• isalnum OK
 • isascii
 • isprint
 • toupper
 • tolower
+• strcat OK / TESTED
 • memset OK / TESTED
 • bzero OK / TESTED
 • memcpy OK / TESTED
@@ -59,11 +59,11 @@ Retest strncmp (voir note dans function list de strncmp)
 • ft_strtrim
 • ft_strsplit
 • ft_itoa
-• ft_putchar OK / TESTED
 • ft_putstr
 • ft_putendl
-• ft_putnbr OK / TESTED
 • ft_putchar_fd
 • ft_putstr_fd
 • ft_putendl_fd
 • ft_putnbr_fde
+• ft_putnbr OK / TESTED
+• ft_putchar OK / TESTED

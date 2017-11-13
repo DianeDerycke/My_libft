@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 03:09:46 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/13 20:55:29 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/13 21:50:37 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 char	*ft_strcat(char *s1, const char *s2);
+int		ft_isdigit(int c);
+int		ft_isalpha(int c);
+int		ft_isalnum(int c);
 #endif
