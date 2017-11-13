@@ -6,56 +6,30 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 05:32:55 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/12 16:42:58 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/13 17:27:50 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-static unsigned int		lenn(const unsigned char *str)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	unsigned int		i;
+	size_t		i;
 
 	i = 0;
-	while(str[i])
-		i++;
-	return (i);
-}
-
-static void	*ft_memccpy(void *dest, void *restrict src, int c, unsigned int n)
-{
-	unsigned char	tmp;
-	unsigned int			i;
-	unsigned int			len;
-	unsigned char	*tmpp;
-
-	i = 0;
-	tmp = c;
-	if(!dest || !src || !n)
-		return(NULL);
-	while(i < n)
+	while (i < n)
 	{
-		if((c - (*(int*)src)) == 0)
-			return(dest);
-			dest = src;
+		(*(unsigned char*)dst) = (*(unsigned char*)src);
+		if (((unsigned char)c) == (*(unsigned char*)src))
+		{
+			dst++;
+			(*(unsigned char*)dst) = '\0';
+			return ((unsigned char*)dst);
+		}
+		dst++;
 		src++;
-		dest++;
 		i++;
 	}
-	tmp = &dest;
-	printf("%s\n", tmpp);
-	return(NULL);
-}
-
-int		main(void)
-{
-	unsigned char	tmp[11] = "";
-	unsigned char	tmp1[10] = "HI";
-	void			*dest;
-	void			*src;
-
-	dest = tmp;
-	src = tmp1;
-	ft_memccpy(dest, src, 43, 2);
-	return (0);
+	(*(unsigned char*)dst) = '\0';
+	return (NULL);
 }

@@ -12,27 +12,15 @@ Retest strncmp (voir note dans function list de strncmp)
 
 						FUNCTION LIST:
 
-• memset
-• bzero < a tester encore sinon OK, a mettre dans le makefile et .h
-• memcpy
-• memccpy OK / TEST < faire quelques test encore au cas ou , enlever le main, le rajouter dans le makefile et .h
 • memmove
 • memchr
 • memcmp
-• strlen OK/TESTED
-• strdup OK / TESTED
-• strcpy OK / TESTED
-• strncpy EN COURS
 • strcat
 • strncat
 • strlcat
 • strchr
 • strrchr
-• strstr OK / TESTED
 • strnstr
-• strcmp OK / TESTED
-• strncmp OK / TESTED
-• atoi OK / TESTED
 • isalpha
 • isdigit
 • isalnum
@@ -40,6 +28,18 @@ Retest strncmp (voir note dans function list de strncmp)
 • isprint
 • toupper
 • tolower
+• memset OK / TESTED
+• bzero OK / TESTED
+• memcpy OK / TESTED
+• memccpy OK / TESTED
+• strlen OK/TESTED
+• strdup OK / TESTED
+• strcpy OK / TESTED
+• strncpy EN COURS
+• strstr OK / TESTED
+• strcmp OK / TESTED
+• strncmp OK / TESTED
+• atoi OK / TESTED
 
 						ADDTIONNALS FUNCTIONS : 
 
@@ -66,4 +66,4 @@ Retest strncmp (voir note dans function list de strncmp)
 • ft_putchar_fd
 • ft_putstr_fd
 • ft_putendl_fd
-• ft_putnbr_fd
+• ft_putnbr_fde

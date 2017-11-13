@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 08:35:48 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/12 16:57:52 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/13 14:28:12 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -167,7 +167,26 @@ int		main(void)
 	printf("%s\n","*************************************" );
 
 	printf("%s\n","----------------BZERO--------------" );
-	
+	printf("%s\n","-------------------------------------" );
+	printf("%s\n","*************************************" );
+
+	printf("%s\n","----------------MEMCPY--------------" );
+
+	(void)argc;
+	char	dst[20];
+	char	p[20];
+
+	printf("%s\n", (char*)ft_memcpy(dst, argv[1], 15));
+	printf("%s\n", (char*)memcpy(p, argv[2], 15));
+	printf("dst len = ");
+	printf("%lu\n", strlen(dst));
+	printf("p len = ");
+	printf("%lu\n", strlen(p));
+	bzero(dst, strlen(dst));
+	bzero(p,strlen(p));
+
+	printf("%s\n","-------------------------------------" );
+	printf("%s\n","*************************************" );
 
 	return(0);
 }

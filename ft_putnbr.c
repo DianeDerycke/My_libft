@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 07:40:26 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/12 16:42:55 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/13 14:46:24 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_putnbr(int n)
 	unsigned int	nb;
 
 	nb = n;
-
 	if (n < 0)
 	{
 		ft_putchar('-');
@@ -26,5 +25,4 @@ void	ft_putnbr(int n)
 	if (nb > 9)
 		ft_putnbr(nb / 10);
 	ft_putchar(nb % 10 + '0');
-
 }

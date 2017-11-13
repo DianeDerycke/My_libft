@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 06:26:17 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/12 16:43:00 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/13 14:36:33 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 int		ft_atoi(const char *str)
 {
-	int		i;
+	int				i;
 	unsigned int	nbr;
 	unsigned int	neg;
+
 	nbr = 0;
 	neg = 0;
 	i = 0;
-
-	while(str[i] <= 32)
+	while (str[i] <= 32)
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{
@@ -30,28 +30,9 @@ int		ft_atoi(const char *str)
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
-		{
-			nbr = (nbr * 10) + (str[i] - '0');
-			i++;
-		}
-		return (neg == 0 ? nbr : -nbr);
-}
-
-/*int		main(int argc, char **argv)
-{
-	(void)argc;
-	int		res1;
-	int		res2;
-
-	res1 = ft_atoi(argv[1]);
-	res2 = atoi(argv[1]);
-	if (res1 == res2)
-		printf("%s\n", "TEST OK :D");
-	else
 	{
-		printf("%s\n","TEST FAIL :(");
-		printf("%s%d\n","res1 = ",res1);
-		printf("%s%d\n","res2 = ",res2);
+		nbr = (nbr * 10) + (str[i] - '0');
+		i++;
 	}
-	return (0);
-}*/
+	return (neg == 0 ? nbr : -nbr);
+}
