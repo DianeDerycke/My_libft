@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 20:48:56 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/13 21:58:05 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/14 23:08:58 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 char	*ft_strcat(char *s1, const char *s2)
 {
-	int		n;
-	int		len;
-	int		i;
+	size_t		n;
+	size_t		i;
 
 	n = ft_strlen(s1);
-	len = ft_strlen(s2);
 	i = 0;
 	while (s2[i])
 	{
