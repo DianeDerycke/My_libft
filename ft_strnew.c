@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/25 03:28:36 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/16 18:24:40 by dideryck         ###   ########.fr       */
+/*   Created: 2017/11/16 16:45:41 by dideryck          #+#    #+#             */
+/*   Updated: 2017/11/16 17:59:21 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_strnew(size_t size)
 {
-	size_t		i;
-	char	*tmp1;
-	char	*tmp2;
+	char	*str;
 
-	tmp1 = (char*)dst;
-	tmp2 = (char*)src;
-	i = 0;
-	if (n == 0)
-		return (dst);
-	while (i < n - 1)
-	{
-		tmp1[i] = tmp2[i];
-		i++;
-	}
-	tmp1[i] = '\0';
-	return (dst);
+	if (size == 0)
+		return (NULL);
+	str = (char*)malloc(sizeof(char) * size);
+	if (str == NULL)
+		return (NULL);
+	ft_bzero(str, size);
+	return (str);
 }

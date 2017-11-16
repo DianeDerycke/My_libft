@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 22:37:19 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 02:30:47 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/16 18:49:04 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	tmp1 = (unsigned char*)dst;
 	tmp2 = (unsigned char*)src;
 	if (!dst || !src)
+		return (dst);
+	if (len == 0)
 		return (dst);
 	while (i < len)
 	{

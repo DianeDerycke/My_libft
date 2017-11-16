@@ -1,0 +1,69 @@
+						TEST SUR HEADER ET MAKEFILE :
+
+Makefile : Not yet
+Header : Not yet
+
+---- = À faire
+
+
+A FAIRE 
+Refont du main.c/// en cours///
+Retest strncmp (voir note dans function list de strncmp)
+
+						FUNCTION LIST:
+
+• strlcat A VERIFIER 42FILECHECKER
+• memmove A VERIFIER 42FILECHECKER
+• memchr OK / TESTED (~)
+• memcmp OK / TESTED
+• strncat OK / TESTED
+• strnstr OK / TESTED
+• strrchr OK / TESTED
+• strchr OK / TESTED
+• isascii OK / TESTED
+• toupper OK / TESTED
+• tolower OK / TESTED
+• isprint OK / TESTED
+• isalpha OK / TESTED
+• isdigit OK / TESTED
+• isalnum OK / TESTED
+• strcat OK / TESTED
+• memset OK / TESTED
+• bzero OK / TESTED
+• memcpy OK / TESTED
+• memccpy OK / TESTED
+• strlen OK / TESTED
+• strdup OK / TESTED
+• strcpy OK / TESTED
+• strncpy OK / TESTED
+• strstr OK / TESTED
+• strcmp OK / TESTED
+• strncmp OK / TESTED
+• atoi OK / TESTED
+
+						ADDTIONNALS FUNCTIONS : 
+
+• ft_memalloc A VERIFIER 42FILECHECKER
+• ft_memdel A VERIFIER 42FILECHECKER
+• ft_strnew A VERIFIER 42FILECHECKER
+• ft_strdel
+• ft_strclr
+• ft_striter
+• ft_striteri
+• ft_strmap
+• ft_strmapi
+• ft_strequ
+• ft_strnequ
+• ft_strsub
+• ft_strjoin
+• ft_strtrim
+• ft_strsplit
+• ft_itoa
+• ft_putstr
+• ft_putendl
+• ft_putchar_fd
+• ft_putstr_fd
+• ft_putendl_fd
+• ft_putnbr_fde
+• ft_putnbr OK / TESTED
+• ft_putchar OK / TESTED
