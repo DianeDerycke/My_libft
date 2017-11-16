@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 22:37:19 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 00:35:13 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/16 02:30:47 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*tmp1;
 	unsigned char	*tmp2;
 

@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 01:15:15 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/15 01:46:42 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/16 02:30:13 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*tmp;
 
 	tmp = ((unsigned char*)s);
