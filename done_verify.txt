@@ -12,9 +12,9 @@ Retest strncmp (voir note dans function list de strncmp)
 
 						FUNCTION LIST:
 
-• memmove
-• memchr
 • strlcat
+• memmove A VERIFIER 42FILECHECKER
+• memchr OK / TESTED (~)
 • memcmp OK / TESTED
 • strncat OK / TESTED
 • strnstr OK / TESTED
