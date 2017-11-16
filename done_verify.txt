@@ -46,15 +46,15 @@ Retest strncmp (voir note dans function list de strncmp)
 • ft_memalloc A VERIFIER 42FILECHECKER
 • ft_memdel A VERIFIER 42FILECHECKER
 • ft_strnew A VERIFIER 42FILECHECKER
-• ft_strdel
-• ft_strclr
-• ft_striter
-• ft_striteri
-• ft_strmap
-• ft_strmapi
-• ft_strequ
-• ft_strnequ
-• ft_strsub
+• ft_strdel CHECK
+• ft_strclr CHECK
+• ft_striter CHECK
+• ft_striteri CHECK
+• ft_strmap CHECK
+• ft_strmapi CHECK
+• ft_strequ CHECK
+• ft_strnequ CHECK
+• ft_strsub CHECK
 • ft_strjoin
 • ft_strtrim
 • ft_strsplit
