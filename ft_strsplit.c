@@ -6,13 +6,13 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 18:02:44 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/17 21:59:30 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 21:39:12 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_count_words(char const *s, char c)
+static int		ft_count_words(char const *s, char c)
 {
 	int		i;
 	int		words;
@@ -34,7 +34,7 @@ static int	ft_count_words(char const *s, char c)
 	return (words);
 }
 
-static int	ft_size_word(char const *s, int index, char c)
+static int		ft_size_word(char const *s, int index, char c)
 {
 	int		size;
 
@@ -68,7 +68,7 @@ static char		**ft_fill_table(char **tab, char const *s, char c, int i)
 	return (tab);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	char	**tab;

@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/18 21:11:22 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 21:24:13 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 21:28:31 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,4 @@
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {
-	
 }

@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 05:32:55 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/16 18:41:21 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 21:29:01 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*tmp1;
 	unsigned char	*tmp2;
 

@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 17:09:02 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/17 17:57:03 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 21:36:01 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ char	*ft_strtrim(char const *s)
 		cpy = (char*)malloc(sizeof(char) * (end - start) + 1);
 	if (cpy == NULL)
 		return (NULL);
-	return (cpy = ft_strsub(s, start, (ft_strlen(s) - start) - (ft_strlen(s) - end - 1)));
+	return (cpy = ft_strsub(s, start, (ft_strlen(s) - start) -
+				(ft_strlen(s) - end - 1)));
 }

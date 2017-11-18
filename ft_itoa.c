@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 21:59:35 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 18:55:50 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 21:29:40 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int		ft_size_str(int nb)
 	neg = (nb < 0 ? 2 : 1);
 	i = 0;
 	if (nb == 0)
-		return (2);             
+		return (2);
 	while (nb)
 	{
 		nb = nb / 10;
@@ -29,7 +29,7 @@ static int		ft_size_str(int nb)
 	return (i + neg);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char	*str;
 	int		tmp;

@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 20:40:42 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 21:14:01 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 21:38:54 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	unsigned int	i;
-	char	*str;
+	char			*str;
 
 	i = 0;
 	str = 0;

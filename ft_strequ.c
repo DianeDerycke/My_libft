@@ -6,13 +6,13 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 21:12:38 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 21:21:28 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 21:37:14 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int 	ft_strequ(char const *s1, char const *s2)
+int		ft_strequ(char const *s1, char const *s2)
 {
 	unsigned int	i;
 

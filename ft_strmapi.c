@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 21:10:10 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 21:10:57 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 21:37:34 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	char	*str;
+	char			*str;
 
 	i = 0;
 	str = 0;

@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 21:54:55 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 22:08:09 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 21:38:00 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
+	char			*str;
 	unsigned int	i;
 	unsigned int	n;
 
@@ -26,7 +26,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str = (char*)malloc(sizeof(char) * ((ft_strlen(s1) + ft_strlen(s2) + 1)));
 	if (str == NULL)
 		return (NULL);
-	str = ft_strcat(str,s1);
-	str = ft_strcat(str,s2);
+	str = ft_strcat(str, s1);
+	str = ft_strcat(str, s2);
 	return (str);
 }
