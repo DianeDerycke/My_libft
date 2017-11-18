@@ -55,11 +55,11 @@ Retest strncmp (voir note dans function list de strncmp)
 • ft_strequ CHECK
 • ft_strnequ CHECK
 • ft_strsub CHECK
-• ft_strjoin
-• ft_strtrim
-• ft_strsplit
-• ft_itoa
-• ft_putstr
+• ft_strjoin CHECK
+• ft_strtrim CHECK
+• ft_strsplit CHECK
+• ft_itoa CHECK
+• ft_putstr CHECK
 • ft_putendl
 • ft_putchar_fd
 • ft_putstr_fd
