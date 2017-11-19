@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 18:41:19 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 02:28:01 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/19 03:36:43 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ char	*ft_strchr(const char *s, int c)
 
 	ptr = 0;
 	i = 0;
-	if (s == NULL)
-		return (NULL);
 	while (s[i])
 	{
 		if (((char)c) == s[i])

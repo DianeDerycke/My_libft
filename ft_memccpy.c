@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 05:32:55 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/18 21:29:01 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/19 01:04:42 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,14 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	tmp1 = (unsigned char*)dst;
 	tmp2 = (unsigned char*)src;
 	i = 0;
+	if (n == 0)
+		return (NULL);
 	while (i < n)
 	{
 		tmp1[i] = tmp2[i];
 		if (((unsigned char)c) == tmp2[i])
-			return (dst);
+			return (&dst[++i]);
 		i++;
 	}
-	tmp1[i] = '\0';
 	return (NULL);
 }

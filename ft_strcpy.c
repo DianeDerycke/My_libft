@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/22 22:37:15 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/13 14:44:10 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 23:40:59 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strcpy(char *dst, const char *src)
 	size_t	i;
 
 	i = 0;
-	if (src == NULL)
-		return (NULL);
 	while (src[i])
 	{
 		dst[i] = src[i];

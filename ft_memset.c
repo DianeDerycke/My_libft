@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 00:39:35 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/18 21:36:22 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/19 03:30:42 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,10 @@ void	*ft_memset(void *b, int c, size_t len)
 	i = 0;
 	if (len == 0)
 		return (b);
-	while (i < len - 1)
+	while (i < len)
 	{
 		tmp[i] = ((unsigned char)c);
 		i++;
 	}
-	tmp[i] = '\0';
 	return (b);
 }

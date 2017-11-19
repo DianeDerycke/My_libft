@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 21:15:17 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 02:28:51 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/19 03:37:30 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	n = 0;
-	if (!little || !big)
-		return (NULL);
 	n = ft_strlen(little);
 	while (big[i] && i < len)
 	{

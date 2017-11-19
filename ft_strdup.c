@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/22 22:30:13 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/16 18:09:38 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/18 23:40:34 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ char	*ft_strdup(const char *s1)
 
 	len = 0;
 	i = 0;
-	if (s1 == NULL)
-		return (NULL);
 	len = ft_strlen(s1);
 	cpy = (char *)malloc((len + 1) * (sizeof(char)));
 	if (cpy == NULL)

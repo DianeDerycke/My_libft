@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: DERYCKE <DERYCKE@student.42.fr>            +#+  +:+       +#+        */
+/*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/18 18:08:35 by dderycke          #+#    #+#             */
-/*   Updated: 2017/10/23 00:10:15 by DERYCKE          ###   ########.fr       */
+/*   Updated: 2017/11/19 03:37:04 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strstr(const char *big, const char *little)
 	int		n;
 
 	i = 0;
-	if (!little || !big)
-		return (NULL);
 	if (little[0] == '\0')
 		return ((char*)big);
 	n = ft_strlen(little);
