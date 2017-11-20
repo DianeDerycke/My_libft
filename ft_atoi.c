@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 06:26:17 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/13 14:36:33 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/20 04:18:20 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ int		ft_atoi(const char *str)
 	nbr = 0;
 	neg = 0;
 	i = 0;
-	while (str[i] <= 32)
+	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\r' || str[i] == '\v' ||
+				str[i] == '\f' || str[i] == 32)
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{

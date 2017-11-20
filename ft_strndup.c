@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/18 18:08:35 by dderycke          #+#    #+#             */
-/*   Updated: 2017/11/20 02:28:51 by dideryck         ###   ########.fr       */
+/*   Created: 2017/11/20 00:40:55 by dideryck          #+#    #+#             */
+/*   Updated: 2017/11/20 00:45:16 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strstr(const char *big, const char *little)
+char	*ft_strndup(const char *s1, size_t len)
 {
-	int		i;
-	int		n;
+	size_t	i;
+	char	*cpy;
 
 	i = 0;
-	if (little[0] == '\0')
-		return ((char*)big);
-	n = ft_strlen(little);
-	while (big[i] != '\0')
+	cpy = (char *)malloc((len + 1) * (sizeof(char)));
+	if (cpy == NULL)
+		return (NULL);
+	while (i < len && s1[i])
 	{
-		if (ft_strncmp(big + i, little, n) == 0)
-			return (((char *)big) + i);
+		cpy[i] = s1[i];
 		i++;
 	}
-	return (NULL);
+	cpy[i] = '\0';
+	return (cpy);
 }

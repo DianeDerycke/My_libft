@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 16:33:43 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 18:09:49 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/20 04:26:02 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,9 @@ void	*ft_memalloc(size_t size)
 
 	if (size == 0)
 		return (NULL);
-	ptr = (void*)malloc(size);
+	ptr = (void *)malloc(size);
 	if (ptr == NULL)
 		return (NULL);
+	ft_bzero(ptr, size);
 	return (ptr);
 }

@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 03:09:46 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/18 23:30:43 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/20 00:43:06 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ int					ft_tolower(int c);
 int					ft_isascii(int c);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
+char				*ft_strndup(const char *s, size_t len);
 char				*ft_strnstr(const char *big, const char *little,
 					size_t len);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
