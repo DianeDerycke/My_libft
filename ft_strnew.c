@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 16:45:41 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 17:59:21 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/20 05:23:19 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_strnew(size_t size)
 
 	if (size == 0)
 		return (NULL);
-	str = (char*)malloc(sizeof(char) * size);
+	str = (char*)malloc(sizeof(char) * (size + 1));
 	if (str == NULL)
 		return (NULL);
-	ft_bzero(str, size);
+	ft_bzero(str, size + 1);
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 16:48:43 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/16 17:58:07 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/20 05:24:34 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_strdel(char **as)
 {
-	free(*as);
-	as = NULL;
+	if (as)
+	{
+		free(*as);
+		*as = NULL;
+	}
 }

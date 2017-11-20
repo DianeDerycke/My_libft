@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 19:55:20 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 21:33:36 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/20 05:31:17 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,12 @@
 
 void	ft_striter(char *s, void (*f)(char *))
 {
-	size_t	i;
-
-	i = 0;
-	if (s[i])
+	if (s)
 	{
-		while (s[i])
+		while (*s)
 		{
-			f(&(s[i]));
-			i++;
+			f(s);
+			s++;
 		}
 	}
 }

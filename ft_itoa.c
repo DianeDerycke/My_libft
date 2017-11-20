@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 21:59:35 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 21:29:40 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/20 06:47:05 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,17 @@ char			*ft_itoa(int n)
 	char	*str;
 	int		tmp;
 	int		i;
+	int		size_str;
 
 	tmp = 0;
+	size_str = 0;
 	str = (char *)malloc(sizeof(char) * ft_size_str(n));
 	if (!str)
 		return (NULL);
 	if (n == 0)
 		return (str = "0");
 	i = ft_size_str(n) - 2;
+	size_str = ft_size_str(n) - 1;
 	if (n < 0)
 	{
 		n = (unsigned int)(-n);
@@ -54,6 +57,6 @@ char			*ft_itoa(int n)
 		n = (unsigned int)n / 10;
 		i--;
 	}
-	str[ft_strlen(str)] = '\0';
+	str[size_str] = '\0';
 	return (str);
 }
