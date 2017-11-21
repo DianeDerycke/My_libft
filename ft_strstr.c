@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/18 18:08:35 by dderycke          #+#    #+#             */
-/*   Updated: 2017/11/20 02:28:51 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/21 04:58:42 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strstr(const char *big, const char *little)
 	n = ft_strlen(little);
 	while (big[i] != '\0')
 	{
-		if (ft_strncmp(big + i, little, n) == 0)
+		if (ft_strncmp(little, big + i, n) == 0)
 			return (((char *)big) + i);
 		i++;
 	}

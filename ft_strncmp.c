@@ -6,12 +6,11 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/19 21:21:33 by dderycke          #+#    #+#             */
-/*   Updated: 2017/11/21 01:20:52 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/21 04:57:12 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int		ft_strncmp(const char *str1, const char *str2, size_t n)
 {
@@ -34,5 +33,5 @@ int		ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	if ((!s1[i] || !s2[i]) && i < n)
 		return (s1[i] - s2[i]);
-	return (s1[j] == s2[j] ? 0 : s1[i] - s2[i]);
+	return (0);
 }
