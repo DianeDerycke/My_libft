@@ -6,12 +6,11 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 21:15:17 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/20 04:08:16 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/20 23:42:29 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

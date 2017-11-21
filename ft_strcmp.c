@@ -6,12 +6,11 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/12 15:08:41 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/20 02:16:05 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/20 23:03:40 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int		ft_strcmp(const char *str1, const char *str2)
 {
