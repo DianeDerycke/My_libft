@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/18 23:17:03 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/22 03:30:36 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/24 01:59:49 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,18 @@
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	alst = 0;
-	del = 0;
+	t_list		*node;
+	t_list		*tmp;
+
+	if (!alst || !(node = *alst))
+		return ;
+	tmp = node;
+	while (tmp)
+	{
+		node = tmp;
+		del(tmp->content, tmp->content_size);
+		free(tmp);
+		tmp = node->next;
+	}
+	*alst = NULL;
 }

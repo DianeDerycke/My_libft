@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/18 23:18:03 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 23:36:13 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/24 03:01:20 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	alst = 0;
-	new = 0;
+	new->next = *alst;
+	*alst = new;
 }
