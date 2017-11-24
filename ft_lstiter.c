@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/18 23:18:47 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 23:36:28 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/24 03:38:26 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	lst = 0;
-	f = 0;
+	t_list	*node;
+
+	if (!(node = lst) || !f)
+		return ;
+	while (node)
+	{
+		f(node);
+		node = node->next;
+	}
 }

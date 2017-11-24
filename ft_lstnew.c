@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/18 21:11:22 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/22 03:40:21 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/24 04:28:01 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 
 	if (!(new = (t_list *)malloc(sizeof(t_list))))
 		return (NULL);
-
 	if (content == NULL)
 	{
 		new->content = NULL;

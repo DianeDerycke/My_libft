@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/18 23:19:24 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 23:40:17 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/24 05:59:05 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,21 @@
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list	*new;
+	t_list		*first_elem;
+	t_list		*new;
 
-	new = 0;
-	lst = 0;
-	f = 0;
-	return (new);
+	new = NULL;
+	first_elem = new;
+	while (lst)
+	{
+		if (!(new = (t_list *)malloc(sizeof(t_list))))
+			return (NULL);
+		if (!first_elem)
+			first_elem = new;
+		new = f(lst);
+		new->next = NULL;
+		new = new->next;
+		lst = lst->next;
+	}
+	return (first_elem);
 }
