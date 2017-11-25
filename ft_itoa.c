@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 21:59:35 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/20 23:03:27 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/25 01:48:34 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char			*ft_itoa(int n)
 	if (!(str = (char *)malloc(sizeof(char) * ft_size_str(n))))
 		return (NULL);
 	if (n == 0)
-		return (str = "0");
+		return (ft_memcpy(str, "0", 2));
 	i = ft_size_str(n) - 1;
 	size_str = ft_size_str(n) - 1;
 	if (n < 0)
