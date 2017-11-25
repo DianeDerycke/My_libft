@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 20:32:38 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/20 05:32:52 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/25 02:29:53 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	unsigned int	i;
 
 	i = 0;
-	if (s)
+	if (s && f)
 	{
 		while (*s)
 		{

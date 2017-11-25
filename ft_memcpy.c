@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 03:28:36 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/19 00:39:43 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/25 02:32:44 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	if (n == 0)
 		return (dst);
-	while (i < n && tmp2[i])
+	while (i < n)
 	{
 		tmp1[i] = tmp2[i];
 		i++;
 	}
-	tmp1[i] = '\0';
 	return (dst);
 }

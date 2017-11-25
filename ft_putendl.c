@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/18 18:54:06 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 21:30:32 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/25 02:37:41 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	ft_putendl(char const *s)
 {
-	if (!s || *s == '\0')
-		return ;
 	while (*s)
 	{
 		ft_putchar(*s);
