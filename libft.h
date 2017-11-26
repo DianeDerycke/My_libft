@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 03:09:46 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/20 00:43:06 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/26 02:11:28 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ int					ft_tolower(int c);
 int					ft_isascii(int c);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
-char				*ft_strndup(const char *s, size_t len);
 char				*ft_strnstr(const char *big, const char *little,
 					size_t len);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
@@ -84,4 +83,10 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+char				*ft_strndup(const char *s, size_t len);
+void				ft_pause(void);
+void				ft_sort_integer_table(int *tab, int size);
+void				ft_double_free(char ***tab);
+size_t				ft_strlen_table(char **tab);
 #endif

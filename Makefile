@@ -6,7 +6,7 @@
 #    By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/25 02:53:05 by DERYCKE           #+#    #+#              #
-#    Updated: 2017/11/25 23:46:56 by dideryck         ###   ########.fr        #
+#    Updated: 2017/11/26 02:11:38 by dideryck         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ FILES = ft_strlen 	ft_putchar 	ft_strstr 	ft_atoi 	ft_strncmp 	ft_putnbr 	ft_str
 		ft_strmap 	ft_strequ 	ft_strsub 	ft_strjoin 	ft_strtrim 	ft_putstr	ft_strsplit \
 		ft_itoa		ft_putendl	ft_putchar_fd	ft_putstr_fd	ft_putendl_fd	ft_putnbr_fd \
 		ft_strmapi	ft_lstnew	ft_lstdelone	ft_lstdel 		ft_lstadd	ft_lstiter	ft_lstmap \
-		ft_strclr	ft_striteri	ft_strnequ	ft_strndup
+		ft_strclr	ft_striteri	ft_strnequ	ft_strndup	ft_pause	ft_sort_integer_table \
+		ft_double_free	ft_strlen_table
 SRC = $(addsuffix .c, $(FILES))
 OBJ = $(addsuffix .o, $(FILES))
 
