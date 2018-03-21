@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 21:31:36 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 21:35:37 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/30 00:49:57 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	char	*str;
 	size_t	i;
 
-	str = 0;
+	str = NULL;
 	i = 0;
 	if (s == NULL)
 		return (NULL);

@@ -5,24 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/26 01:09:26 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/26 02:03:40 by dideryck         ###   ########.fr       */
+/*   Created: 2017/11/30 02:35:04 by dideryck          #+#    #+#             */
+/*   Updated: 2017/11/30 02:52:22 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_double_free(char ***tab)
+void	ft_double_free(char **tab)
 {
 	int		i;
 
 	i = 0;
-	while (*tab[i])
+	while (tab[i])
 	{
-		free(*tab[i]);
-		*tab[i] = NULL;
+		ft_memdel((void *)&tab[i]);
 		i++;
 	}
-	free(*tab);
-	*tab = NULL;
+	ft_memdel((void *)tab[i]);
+	ft_memdel((void *)&tab);
 }

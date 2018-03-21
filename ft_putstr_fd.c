@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/18 19:39:23 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/18 21:32:08 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/30 00:49:29 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,5 @@
 void	ft_putstr_fd(char const *s, int fd)
 {
 	if (s)
-	{
-		while (*s)
-		{
-			ft_putchar_fd(*s, fd);
-			s++;
-		}
-	}
+		write(fd, s, ft_strlen(s));
 }

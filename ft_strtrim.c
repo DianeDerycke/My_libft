@@ -6,13 +6,20 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 17:09:02 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/25 03:59:33 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/30 02:23:06 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+static	int		ft_is_spacetrim(char c)
+{
+	if (c == ' ' || c == '\n' || c == '\t')
+		return (1);
+	return (0);
+}
+
+char			*ft_strtrim(char const *s)
 {
 	int		start;
 	int		end;
@@ -21,13 +28,12 @@ char	*ft_strtrim(char const *s)
 
 	cpy = 0;
 	start = 0;
-	if (s)
-		end = ft_strlen(s);
 	if (!s)
 		return (NULL);
-	while (start < end && s[start] <= 32)
+	end = ft_strlen(s) - 1;
+	while (start < end && ft_is_spacetrim(s[start]))
 		start++;
-	while (end > 0 && s[end] <= 32)
+	while (end > 0 && ft_is_spacetrim(s[end]))
 		end--;
 	if (start >= end)
 		return (ft_strdup(""));

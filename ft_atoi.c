@@ -6,7 +6,7 @@
 /*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 06:26:17 by DERYCKE           #+#    #+#             */
-/*   Updated: 2017/11/20 22:45:37 by dideryck         ###   ########.fr       */
+/*   Updated: 2017/11/30 01:49:38 by dideryck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int		ft_atoi(const char *str)
 {
 	int				i;
-	unsigned int	nbr;
+	int				nbr;
 	unsigned int	neg;
 
 	nbr = 0;

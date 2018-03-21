@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_init_dblist.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dideryck <dideryck@student.42.fr>          +#+  +:+       +#+        */
+/*   By: DERYCKE <DERYCKE@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/13 22:05:15 by dideryck          #+#    #+#             */
-/*   Updated: 2017/11/30 00:49:59 by dideryck         ###   ########.fr       */
+/*   Created: 2018/02/17 09:22:58 by DERYCKE           #+#    #+#             */
+/*   Updated: 2018/02/17 09:24:07 by DERYCKE          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+void	ft_init_dblist(t_dblist *lst)
 {
-	if (c >= 'A' && c <= 'Z')
-		c = c + 32;
-	return (c);
+   lst->first = NULL;
+   lst->last = NULL;
 }
